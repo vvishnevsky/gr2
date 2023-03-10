@@ -1,0 +1,20 @@
+Write a C# program to check two given integers and return true if one is negative and one is positive.
+           Sample Output:
+           Input first integer:
+           -5
+           Input second integer:
+           25
+           Check if one is negative and one is positive:
+           True
+
+- Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
+- Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
+- Write a C# program to compute the sum of the first 500 prime numbers.
+             Sample Output:
+             Sum of the first 500 prime numbers:
+             824693
+
+- Write a C# program and compute the sum of the digits of an integer.
+             Sample Output:
+             Input a number(integer): 12 (string.Length)
+             Sum of the digits of the said integer: 3
