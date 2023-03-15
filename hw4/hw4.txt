@@ -1,0 +1,12 @@
+-Write a C# method to find the largest value from three integer values.
+-Write a C# method to find the lowest value from three integer values.
+- Write a C# method to check the nearest value of 20 of two given integers and return 0 if two numbers are same 
+           Test Data:
+            Input first integer:
+           15
+           Input second integer:
+          12
+          Sample Output
+          15
+-Write a C# method to compute the sum of all the elements of an array of integers
+- Write a C# method to get the larger value from array
