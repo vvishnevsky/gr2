@@ -27,31 +27,55 @@
             Console.WriteLine($"the largest is {lowest}\n");
 
             //Write a C# method to check the nearest value of 20 of two given integers and return 0 if two numbers are same
+            Console.Write("enter first number: ");
+            firstInt = int.Parse(Console.ReadLine());
+            Console.Write("enter second number: ");
+            secondInt = int.Parse(Console.ReadLine());
 
+            if (firstInt == secondInt)
+                Console.WriteLine("0");
+            else
+            {
+                if (int.Abs(20 - firstInt) < int.Abs(20 - secondInt))
+                    Console.WriteLine(firstInt);
+                else if (int.Abs(20 - firstInt) > int.Abs(20 - secondInt))
+                    Console.WriteLine(secondInt);
+                else
+                    Console.WriteLine("both numbers are close to 20");
+            }
 
             //Write a C# method to compute the sum of all the elements of an array of integers
-            Console.Write("enter some numbers: ");
+            Console.Write("\nenter some numbers by space, e.g. 34 46 23: ");
             var inputString = Console.ReadLine();
+            var arrString = inputString.Split(" ");
             var sumArray = 0;
-            var arr = new int[inputString.Length];
+            var arr = new int[arrString.Length];
 
-            for (var i = 0; i < inputString.Length; i++)
-                arr[i] = int.Parse(inputString[i].ToString());
+            for (var i = 0; i < arrString.Length; i++)
+                arr[i] = int.Parse(arrString[i]);
 
             foreach (var i in arr)
                 sumArray += i;
 
-            Console.WriteLine($"sum of entered numbers {inputString} is {sumArray}");
+            Console.WriteLine($"sum of entered numbers: {sumArray}\n");
 
             //Write a C# method to get the larger value from array
-            Console.Write("enter some numbers: ");
+            Console.Write("\nenter some numbers by space, e.g. 34 46 23: ");
             inputString = Console.ReadLine();
+            arrString = inputString.Split(" ");
+            arr = new int[arrString.Length];
+            var max = 0;
 
-            arr = new int[inputString.Length];
+            for (var i = 0; i < arrString.Length; i++)
+                arr[i] = int.Parse(arrString[i]);
 
-            for (var i = 0; i < inputString.Length; i++)
-                arr[i] = int.Parse(inputString[i].ToString());
+            foreach (var i in arr)
+            {
+                if (i > max)
+                    max = i;
+            }
 
+            Console.WriteLine($"array max value is {max}");
         }
 
         static int GetLargestOfThree(int a, int b, int c)
