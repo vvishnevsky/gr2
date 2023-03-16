@@ -7,29 +7,32 @@
             Console.WriteLine("hw4\n");
 
             //Write a C# method to find the largest value from three integer values.
-            Console.Write("enter first value: ");
+            Console.WriteLine("find the largest value from three integer values\n");
+            Console.Write("enter first value and press enter: ");
             var firstInt = int.Parse(Console.ReadLine());
-            Console.Write("enter second value: ");
+            Console.Write("enter second value and press enter: ");
             var secondInt = int.Parse(Console.ReadLine());
-            Console.Write("enter third value: ");
+            Console.Write("enter third value and press enter: ");
             var thirdInt = int.Parse(Console.ReadLine());
             var largest = GetLargestOfThree(firstInt, secondInt, thirdInt);
             Console.WriteLine($"the largest is {largest}\n");
 
             //Write a C# method to find the lowest value from three integer values.
-            Console.Write("enter first value: ");
+            Console.WriteLine("find the lowest value from three integer values\n");
+            Console.Write("enter first value and press enter: ");
             firstInt = int.Parse(Console.ReadLine());
-            Console.Write("enter second value: ");
+            Console.Write("enter second value and press enter: ");
             secondInt = int.Parse(Console.ReadLine());
-            Console.Write("enter third value: ");
+            Console.Write("enter third value and press enter: ");
             thirdInt = int.Parse(Console.ReadLine());
             var lowest = GetLowestOfThree(firstInt, secondInt, thirdInt);
-            Console.WriteLine($"the largest is {lowest}\n");
+            Console.WriteLine($"the lowest is {lowest}\n");
 
             //Write a C# method to check the nearest value of 20 of two given integers and return 0 if two numbers are same
-            Console.Write("enter first number: ");
+            Console.WriteLine("check the nearest value of 20 of two given integers\n");
+            Console.Write("enter first number and press enter: ");
             firstInt = int.Parse(Console.ReadLine());
-            Console.Write("enter second number: ");
+            Console.Write("enter second number and press enter: ");
             secondInt = int.Parse(Console.ReadLine());
 
             if (firstInt == secondInt)
@@ -45,7 +48,7 @@
             }
 
             //Write a C# method to compute the sum of all the elements of an array of integers
-            Console.Write("\nenter some numbers by space, e.g. 34 46 23: ");
+            Console.Write("\nenter some numbers by space, e.g. 34 46 23 and press enter: ");
             var inputString = Console.ReadLine();
             var arrString = inputString.Split(" ");
             var sumArray = 0;
@@ -57,10 +60,10 @@
             foreach (var i in arr)
                 sumArray += i;
 
-            Console.WriteLine($"sum of entered numbers: {sumArray}\n");
+            Console.WriteLine($"sum of array values is: {sumArray}\n");
 
             //Write a C# method to get the larger value from array
-            Console.Write("\nenter some numbers by space, e.g. 34 46 23: ");
+            Console.Write("\nenter some numbers by space, e.g. 34 46 23 and press enter: ");
             inputString = Console.ReadLine();
             arrString = inputString.Split(" ");
             arr = new int[arrString.Length];
