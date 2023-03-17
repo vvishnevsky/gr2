@@ -1,0 +1,11 @@
+Create a student class and describe its main characteristics: First name, last name, age, city, courses attended (an array of courses).
+Describe the following actions: Print (output basic information).
+Add one course to the student (add a new course to the course array).
+Delete a course from a student.
+Create a course class and describe its main characteristics: course name, teacher name, course duration, number of students.
+Describe the following actions: Print (output basic information).
+Add a student to the course group (add one student to the number of students).
+
+
+
+for each of the classes create a chain of calling constructors.
