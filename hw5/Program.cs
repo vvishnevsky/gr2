@@ -15,14 +15,29 @@
             var city = Console.ReadLine();
 
             var student1 = new Student(firstName, lastName, age, city);
-            
-            student1.AddCourse("course1");
-            student1.AddCourse("course2");
-            student1.AddCourse("course10");
-            student1.Print();
+            var student2 = new Student("boris", "johnson", 50, "london");
 
-            student1.DeleteCourse("course2");
+            var course1 = new Course("course1", "teacher1", 100);
+            var course2 = new Course("course2", "teacher2", 70);
+            var course10 = new Course("course10", "teacher10", 90);
+
+            student1.AddCourse(course1);
+            student1.AddCourse(course2);
+            student1.AddCourse(course10);
             student1.Print();
+            student2.AddCourse(course2);
+            student2.AddCourse(course10);
+            student2.Print();
+            course1.Print();
+            course2.Print();
+            course10.Print();
+
+            student1.DeleteCourse(course2);
+            student2.DeleteCourse(course10);
+            student1.Print();
+            student2.Print();
+            course2.Print();
+            course10.Print();
         }
     }
 }
