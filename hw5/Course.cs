@@ -2,21 +2,26 @@
 {
     class Course
     {
-        private string _courseName { get; set; }
-        private string _teacherName { get; set; }
-        private int _courseDuration { get; set; }
-        private int _students { get; set; }
+        private string CourseName { get; set; }
+        private string TeacherName { get; set; }
+        private int CourseDuration { get; set; }
+        private int Students { get; set; }
 
-        public Course()
+        public Course(string courseName, string teacherName, int courseDuration)
         {
+            CourseName = courseName;
+            TeacherName = teacherName;
+            Students = courseDuration;
         }
 
         public void Print()
         {
+            Console.WriteLine($"{CourseName} {TeacherName} {CourseDuration} {Students}");
         }
 
-        public void Add()
+        public void AddStudent()
         {
+            Students++;
         }
     }
 }
