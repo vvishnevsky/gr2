@@ -1,14 +1,10 @@
 ﻿namespace hw5
 {
-    class Student
+    class Student : Person
     {
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private int Age { get; set; }
-        private string City { get; set; }
-        private Course[] CoursesAttended { get; set; }
+        Course[] CoursesAttended { get; set; }
 
-        public Student(string firstName, string lastName, int age, string city)
+        public Student(string firstName, string lastName, int age, string city) : base(firstName, lastName, age, city)
         {
             CoursesAttended = new Course[10];
             FirstName = firstName;
@@ -20,12 +16,7 @@
         public void Print()
         {
             Console.WriteLine($"Student {FirstName} {LastName}, age {Age}, city {City}");
-            var i = 0;
-            foreach (var c in CoursesAttended)
-            {
-                if (c != null)
-                    Console.WriteLine($"courses attended: {++i}. {c.CourseName}");
-            }
+            PrintCourses();
         }
 
         public void AddCourse(Course course)
@@ -53,6 +44,22 @@
             }
             CoursesAttended = temp;
             course.DeleteStudent();
+        }
+
+        public override void DescribeYourself()
+        {
+            Console.WriteLine($"Hey, dude, i'm a student i'm {Age} years old. Currently i'm attending the following courses:");
+            PrintCourses();
+        }
+
+        private void PrintCourses()
+        {
+            var i = 0;
+            foreach (var c in CoursesAttended)
+            {
+                if (c != null)
+                    Console.WriteLine($"courses attended: {++i}. {c.CourseName}");
+            }
         }
     }
 }
