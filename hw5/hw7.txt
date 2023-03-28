@@ -1,0 +1,5 @@
+- add a collection of students to the teacher
+- add a collection of students to the course
+- add a collection of courses to a student
+- add a collection of courses to the teacher
+- implement collection management methods (add, remove, get the number of elements in the collection)
