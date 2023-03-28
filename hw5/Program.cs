@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Enter the first student info");
             Console.Write("Enter first name: ");
             var firstName = Console.ReadLine();
             Console.Write("Enter second name: ");
@@ -50,6 +50,12 @@
             student1.DescribeYourself();
             student2.DescribeYourself();
             Console.WriteLine();
+
+            teacher1.AddCourse(course1);
+            teacher2.AddCourse(course2);
+            teacher1.AddStudent(student2);
+            teacher2.AddStudent(student1);
+            teacher10.AddCourse(course2);
 
             teacher1.DescribeYourself();
             teacher2.DescribeYourself();
