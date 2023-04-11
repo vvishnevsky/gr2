@@ -1,0 +1,8 @@
+The purpose of homework is to finalize the project with students and teachers.
+	Make sure that you have completed all of the listed functions or add them:
+- displaying all students on the screen (it is obligatory to display all courses for each student)
+- displaying all teachers (it is obligatory to display all courses for each teacher)
+- displaying all courses (for each course, display the teacher and all students)
+- write error handling
+- implement the ability to filter when linking students and a teacher by one field (for example, by name.
+	If the name contains a string entered from the console, display these entities)

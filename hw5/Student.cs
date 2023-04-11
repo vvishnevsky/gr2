@@ -30,6 +30,7 @@
             //        break;
             //    }
             Courses.Add(course);
+            
             course.AddStudent(this);
         }
 
