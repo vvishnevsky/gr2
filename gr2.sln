@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw2", "hw2\hw2.csproj", "{5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw3", "hw3\hw3.csproj", "{C4FB226D-9EEA-41E8-BE67-2AA180BE2CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw4", "hw4\hw4.csproj", "{28297CCE-C9E9-4BB6-9895-345CC23CB9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw4", "hw4\hw4.csproj", "{28297CCE-C9E9-4BB6-9895-345CC23CB9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw5", "hw5\hw5.csproj", "{5A7B39BA-D023-4CF9-8100-43D501707543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw5", "hw5\hw5.csproj", "{5A7B39BA-D023-4CF9-8100-43D501707543}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
