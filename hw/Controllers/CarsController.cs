@@ -1,13 +1,14 @@
-using hw1.Models;
+﻿using hw.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace hw1.Controllers
+namespace hw.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+    [Route("/")]
+    //[ApiController]
     public class CarsController : ControllerBase
     {
-        [HttpGet(Name = "GetCars")]
+        [HttpGet]
         public List<CarModel> Get()
         {
             List<CarModel> Cars = new()

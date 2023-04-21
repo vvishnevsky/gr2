@@ -1,3 +1,4 @@
+using hw1.Models;
 
 namespace hw1
 {
@@ -8,13 +9,21 @@ namespace hw1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            
+            //builder.Services.AddTransient<IManagementCars, CarModel>();
 
             var app = builder.Build();
+
+            app.Run(async c => {
+                var car = app.Services.GetService<CarModel>();
+                car = new CarModel();
+                await c.Response.WriteAsync($"Car name: {car?.GetCarName()}");
+            });
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -26,7 +35,6 @@ namespace hw1
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
