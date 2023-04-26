@@ -1,6 +1,6 @@
 ﻿namespace hw1.Models
 {
-    public class CarModel : IManagementCars
+    public class Car : IManagementCars
     {
         public string? Manufacturer { get; set; }
         public string? Name { get; set; }
@@ -11,7 +11,7 @@
         public string? Engine { get; set; }
         public string? Transmission { get; set; }
 
-        public CarModel()
+        public Car()
         {
             Name = "car name";
         }

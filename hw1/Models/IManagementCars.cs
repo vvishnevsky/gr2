@@ -1,4 +1,4 @@
-﻿namespace hw1
+﻿namespace hw1.Models
 {
     public interface IManagementCars
     {

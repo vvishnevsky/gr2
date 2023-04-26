@@ -4,6 +4,6 @@
     {
         string GetCarName();
         string GetCarEngine();
-        string GetCarAge();
+        int GetCarAge();
     }
 }
