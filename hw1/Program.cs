@@ -20,8 +20,8 @@ namespace hw1
             var app = builder.Build();
 
             app.Run(async c => {
-                var car = app.Services.GetService<CarModel>();
-                car = new CarModel();
+                var car = app.Services.GetService<Car>();
+                car = new Car();
                 await c.Response.WriteAsync($"Car name: {car?.GetCarName()}");
             });
 

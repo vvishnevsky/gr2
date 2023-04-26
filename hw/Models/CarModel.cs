@@ -10,20 +10,33 @@
         public string? Class { get; set; }
         public string? Engine { get; set; }
         public string? Transmission { get; set; }
+        public DateTime? ProdDate { get; set; }
 
         public CarModel()
         {
-            Name = "car name";
+            Name = "no car name";
         }
 
-        public string GetCarAge()
+        public CarModel(string? manufacturer, string? name, string? layout, string? colour, string? body, string? @class, string? engine, string? transmission)
         {
-            throw new NotImplementedException();
+            Manufacturer = manufacturer;
+            Name = name;
+            Layout = layout;
+            Colour = colour;
+            Body = body;
+            Class = @class;
+            Engine = engine;
+            Transmission = transmission;
+        }
+
+        public int GetCarAge()
+        {
+            return DateTime.Now.Year - ProdDate.Value.Year;
         }
 
         public string GetCarEngine()
         {
-            throw new NotImplementedException();
+            return Engine;
         }
 
         public string GetCarName()
