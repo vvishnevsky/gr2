@@ -8,17 +8,17 @@ namespace hw.Controllers
     public class CarsController : ControllerBase
     {
         [HttpGet]
-        public List<CarModel> Get()
+        public List<Car> Get()
         {
-            List<CarModel> Cars = new()
+            List<Car> Cars = new()
             {
-                new CarModel
+                new Car
                 {
                     Manufacturer = "Audi", Name = "A2", Layout = "FF", Body = "", Class = "B", Transmission = "A", Colour = "grey",
                     Engine = "petrol"
                 },
 
-                new CarModel { Manufacturer = "Bmw", Layout = "FR", Class = "E", Name = "5", Body = "sedan", Engine = "petrol" }
+                new Car { Manufacturer = "Bmw", Layout = "FR", Class = "E", Name = "5", Body = "sedan", Engine = "petrol" }
             };
 
             return Cars;
