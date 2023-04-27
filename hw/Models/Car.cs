@@ -1,6 +1,6 @@
 ﻿namespace hw.Models
 {
-    public class CarModel : IManagementCars
+    public class Car : IManagementCars
     {
         public string? Manufacturer { get; set; }
         public string? Name { get; set; }
@@ -12,12 +12,13 @@
         public string? Transmission { get; set; }
         public DateTime? ProdDate { get; set; }
 
-        public CarModel()
+        public Car()
         {
             Name = "no car name";
         }
 
-        public CarModel(string? manufacturer, string? name, string? layout, string? colour, string? body, string? @class, string? engine, string? transmission)
+        public Car(string? manufacturer, string? name, string? layout, string? colour, string? body, string? @class, string? engine,
+            string? transmission, DateTime? prodDate)
         {
             Manufacturer = manufacturer;
             Name = name;
@@ -27,21 +28,27 @@
             Class = @class;
             Engine = engine;
             Transmission = transmission;
+            ProdDate = prodDate;
         }
 
-        public int GetCarAge()
+        public async Task<string> GetCarAge()
         {
-            return DateTime.Now.Year - ProdDate.Value.Year;
+            return "Car age is " + (DateTime.Now.Year - ProdDate.Value.Year).ToString();
         }
 
-        public string GetCarEngine()
+        public async Task<string> GetCarEngine()
         {
-            return Engine;
+            return "Car engine is " + Engine;
         }
 
-        public string GetCarName()
+        public async Task<string> GetCarName()
         {
-            return Name;
+            return $"Car name is {Manufacturer} {Name}";
+        }
+
+        public async Task<string> GetCar()
+        {
+            return await GetCarName() + "\n" + await GetCarEngine() + "\n" + await GetCarAge();
         }
     }
 }

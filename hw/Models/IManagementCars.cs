@@ -2,8 +2,9 @@
 {
     public interface IManagementCars
     {
-        string GetCarName();
-        string GetCarEngine();
-        int GetCarAge();
+        Task<string> GetCarName();
+        Task<string> GetCarEngine();
+        Task<string> GetCarAge();
+        Task<string> GetCar();
     }
 }
