@@ -1,0 +1,5 @@
+- Create interface IManagementCars with methods GetCarName(), GetCarEngine(), GetCarAge()
+- Implement interface
+- Register interface in DI
+- create routes for every method (use app.Map)
+- Create middlewares for each route and print information
