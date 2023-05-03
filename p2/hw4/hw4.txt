@@ -1,0 +1,4 @@
+﻿    Create application with Razor pages.
+    Make a page 'About me' and describe yourself in several sentences. (Update index page)
+    Add a page 'My hobbies' and get information from the model. It should be List<Hobby>.
+    Describe model Hobby as you want. Add button on header on start page.
