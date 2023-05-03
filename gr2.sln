@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw4", "p2\hw4\hw4.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw5", "p2\hw5\hw5.csproj", "{FBE0A0CB-656B-481F-90E7-D7F9AF19A43D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw6", "p2\hw6\hw6.csproj", "{0C32CF98-6754-4406-BC66-D1A67AC55F52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw6", "p2\hw6\hw6.csproj", "{0C32CF98-6754-4406-BC66-D1A67AC55F52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,60 @@
+﻿@page
+
+@model HobbiesModel
+
+@*@model hw4.Pages.My_hobbiesModel*@
+@{
+    ViewData["Title"] = "My hobbies";
+}
+
+<div>
+    <h2 class="text-center display-4">@ViewData["Title"]</h2>
+</div>
+<div>
+    <div>
+        <h3>Art</h3>
+    <p>
+        @{
+            string value = "no value";
+            Model.Hobbies.TryGetValue("Art", out value);
+            @value;
+        }
+    </p>
+    </div>
+    <div>
+        <h3>Blogging</h3>
+        <p>
+            @{
+                Model.Hobbies.TryGetValue("Blogging", out value);
+                @value;
+            }
+        </p>
+    </div>
+    <div>
+        <h3>Ceramics</h3>
+        <p>
+            @{
+                Model.Hobbies.TryGetValue("Ceramics", out value);
+                @value;
+            }
+        </p>
+    </div>
+    <div>
+        <h3>Diving</h3>
+        <p>
+            @{
+                Model.Hobbies.TryGetValue("Diving", out value);
+                @value;
+            }
+        </p>
+    </div>
+    <div>
+        <h3>Engraving</h3>
+        <p>
+            @{
+                Model.Hobbies.TryGetValue("Engraving", out value);
+                @value;
+            }
+        </p>
+    </div>
+</div>
